@@ -8,6 +8,9 @@ export class ObraDetalle {
         this.nombre = n;
         this.imageUrl = u;
         this.descripcion = d
-        this.etiquetas = tags;
+        this.etiquetas = [];
+        while (tags.length > 0) {
+            this.etiquetas.push(tags.pop());   
+        }
     }
 }

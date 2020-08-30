@@ -7,10 +7,14 @@
         <h3>{{obra.nombre}}</h3>
         <p>{{obra.imageUrl}}</p>
         <p>{{obra.descripcion}}</p>
-
         <div class="btn-group btn-group-sm row" *ngIf="obra.etiquetas">
-            <button *ngFor="let etiq of obra.etiquetas" class="btn btn-success ml-1 mt-1">{{etiq}}</button>
+            <ul style="list-style: none;">
+                <li *ngFor="let etiq of obra.etiquetas">
+                    <button class="btn btn-success ml-1 mt-1">{{etiq}}</button>
+                </li>
+            </ul>
         </div>
+        <br>
         <div class="btn-group btn-group-sm row mt-2" *ngIf="obra.etiquetas">
             <a href="#" class="btn-card">Leer</a>
         </div>
