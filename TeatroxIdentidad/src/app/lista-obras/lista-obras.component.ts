@@ -7,6 +7,7 @@ import { ObraDetalle } from './../models/obra-detalle.model';
   styleUrls: ['./lista-obras.component.css']
 })
 export class ListaObrasComponent implements OnInit {
+  
   public etiquetas = ['comedia','drama','suspenso','musical','show al aire libre','poco espacio','entradas agotadas'];
   tags:string[];
   obras: ObraDetalle[];
